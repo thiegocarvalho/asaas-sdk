@@ -68,7 +68,7 @@ class Connection
         $params = json_encode($params);
         $ch = curl_init();
 
-        curl_setopt($ch, CURLOPT_URL, $this->base_url . '.asaas.com/api/v3' . $url);
+        curl_setopt($ch, CURLOPT_URL, $this->base_url . 'v3' . $url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
         curl_setopt($ch, CURLOPT_HEADER, FALSE);
 
