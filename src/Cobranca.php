@@ -74,7 +74,7 @@ class Cobranca
     // Atualiza os dados da cobrança
     public function getInfoBoleto($id)
     {
-        return $this->http->post('/payments/' . $id . '/identificationField', []);
+        return $this->http->get('/payments/' . $id . '/identificationField', []);
     }
 
     // Restaura cobrança removida
