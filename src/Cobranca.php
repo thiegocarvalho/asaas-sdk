@@ -36,6 +36,11 @@ class Cobranca
         return $this->http->get('/payments' . $filtro);
     }
 
+    public function capture($id)
+    {
+        return $this->http->post('/payments/' . $id . '/captureAuthorized');
+    }
+
     // Retorna os dados da cobrança de acordo com o Id
     public function getById($id)
     {
