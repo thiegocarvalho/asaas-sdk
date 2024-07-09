@@ -38,7 +38,7 @@ class Cobranca
 
     public function capture($id)
     {
-        return $this->http->post('/payments/' . $id . '/captureAuthorized');
+        return $this->http->post('/payments/' . $id . '/captureAuthorized', []);
     }
 
     // Retorna os dados da cobrança de acordo com o Id
